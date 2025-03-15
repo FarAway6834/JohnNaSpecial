@@ -7,7 +7,7 @@ from martialaw.martialaw import partial as _f
 from functools import wraps as _d
 
 _o, (_r, _w) = _f(open, newline=''), map(_c(delimiter = '\n'), (_r, _w))
-_x = _f(_o, mode = '\n')
+_x = _f(_o, mode = 'w')
 
 def _wither_(opener = _o):
     def with_deco(func):
